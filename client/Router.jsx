@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Box } from '@material-ui/core';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Dashboard } from './screens/Dashboard';
 

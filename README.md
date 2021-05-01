@@ -5,9 +5,9 @@
 - React frontend
 - Express Backend
 - Production ready to be deployed on GCP
+- In development mode, front end will be accessible at http://localhost:3000
 
-
-* For development mode to work properly, you'll need the .env file in the root directory with the following variables assigned.*
+* In development mode, edit the .env file to switch from production mode to development mode or to change the app name or port number. *
 
 
 ```
