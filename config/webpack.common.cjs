@@ -2,11 +2,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+
 const paths = require('./paths.cjs');
-const dotenv = require('dotenv-webpack');
 
 module.exports = {
-  entry: ['@babel/polyfill', paths.src + '/index.jsx'],
+  entry: ['@babel/polyfill', `${paths.src}/index.jsx`],
 
   output: {
     path: paths.build,
@@ -18,9 +18,7 @@ module.exports = {
   },
 
   plugins: [
-    new dotenv(),
     new CleanWebpackPlugin(),
-
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -35,7 +33,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: paths.public + '/index.html',
+      template: `${paths.public}/index.html`,
     }),
 
     new ESLintPlugin({

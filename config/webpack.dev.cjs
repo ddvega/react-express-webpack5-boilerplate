@@ -1,8 +1,7 @@
 const webpack = require('webpack');
 const { merge } = require('webpack-merge');
-const common = require('./webpack.common.cjs');
 const dotenv = require('dotenv');
-const paths = require('./paths.cjs');
+const common = require('./webpack.common.cjs');
 
 dotenv.config();
 
